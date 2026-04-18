@@ -1,3 +1,16 @@
 <h1>{{ message }}</h1>
 
 <app-counter></app-counter>
+
+<h2>Список пользователей</h2>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }} - {{ user.age }}
+  </li>
+</ul>
+
+<h2>Дата</h2>
+<p>{{ today | date:'dd/MM/yyyy' }}</p>
+
+<h2>Pipe +5</h2>
+<p>{{ number | plusFive }}</p>
