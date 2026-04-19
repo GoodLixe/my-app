@@ -3,6 +3,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { BookComponent } from './book/book.component';
 import { InlineComponent } from './inline/inline.component';
+import { DemoComponent } from './demo/demo.component';
 
 export const routes: Routes = [
   {
@@ -18,5 +19,9 @@ export const routes: Routes = [
   {
     path: 'open-graph',
     component: InlineComponent
+  },
+  {
+    path: 'demo',
+    component: DemoComponent
   }
 ];

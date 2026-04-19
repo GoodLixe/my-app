@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule], // 🔥 ВОТ ЭТО ВАЖНО
+  imports: [RouterModule], 
   templateUrl: './app.component.html'
 })
 export class AppComponent {
