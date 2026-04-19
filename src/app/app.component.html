@@ -4,14 +4,15 @@
   <a routerLink="/about">About</a> |
   <a routerLink="/contact">Contact</a>
    |
-  <a [routerLink]="['/item', 1, 'details']">Item Details</a>
+  <a [routerLink]="['/item', 1, 'details']">Item Details</a> |
   <a 
     [routerLink]="['/item', 1, 'list']"
     [queryParams]="{ list: 1, enable: true }"
   >
     Item List
-  </a>
-  <a routerLink="/page">Page</a>
+  </a> |
+  <a routerLink="/page">Page</a> |
+  <a routerLink="/book">Book</a>
   <router-outlet></router-outlet>
 </nav>
 
