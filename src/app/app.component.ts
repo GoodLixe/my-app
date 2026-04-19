@@ -1,11 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterModule], // 🔥 ВОТ ЭТО ВАЖНО
+  templateUrl: './app.component.html'
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Desk Page');
+
+    this.meta.addTag({
+      property: 'og:desc',
+      content: 'root_desc'
+    });
+  }
+}
